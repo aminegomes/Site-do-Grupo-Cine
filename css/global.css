@@ -5,6 +5,10 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-top: 60px; /* Para compensar a navbar fixa */
+    background-color: #ffffff;
+    color: rgb(0, 0, 0); /* Altere para branco para que o texto fique visível */
+    margin: 0;
+    font-family: Arial, sans-serif;
   }
   
 .banner {
@@ -30,3 +34,105 @@ body {
   .navbar-brand{
     font-family:'Times New Roman', Times, serif;
   }
+
+  .buttons-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Ajusta a imagem ao tamanho do container */
+    height: auto;    /* Mantém a proporção da imagem */
+  }
+
+
+  /* Estilos gerais */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Estilos da navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #34312d;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+/* Menu da navbar */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.navbar-menu a:hover {
+  color: #FFD700;
+}
+
+/* Estilos do conteúdo */
+.content {
+  padding: 20px;
+  text-align: center;
+}
+
+.bg-dark {
+  background-color: #333; /* Cor cinza escuro */
+  color: white;          /* Texto branco para contraste */
+}
+
+.container {
+  padding: 20px;
+}
+
+.movie-info {
+  text-align: center;
+  margin-top: 10px;
+}
+.img-fluid {
+  border-radius: 5px;
+}
+
+
+
+.movie-card img {
+  width: 100%; /* A imagem ocupará toda a largura do container */
+  height: 100%; /* A imagem ocupará toda a altura do container */
+  object-fit: cover; /* Garante que a imagem se ajuste corretamente sem distorcer */
+  border-radius: 5px; /* Arredondamento nas bordas da imagem */
+}
