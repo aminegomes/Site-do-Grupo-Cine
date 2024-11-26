@@ -124,8 +124,9 @@ body {
   text-align: center;
   margin-top: 10px;
 }
+
 .img-fluid {
-  border-radius: 5px;
+  border-radius: 20px;
 }
 
 
