@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="./css/global.css">
 
     <style>
+
+      body{
+        background-color: #1f1e1e;
+      }
+
       .container {
           margin-top: 40px;
       }
@@ -45,6 +50,22 @@
           height: 100%;
           text-decoration: none;
       }
+
+      .text-center {
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      }
+
+      .carousel-caption h4 {
+        font-size: 28px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: #ffffff;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 4px 5px;
+        border-radius: 10px;
+        display: inline-block;
+      }
+
   </style>
 
 </head>
@@ -69,68 +90,73 @@
   <!-- carousel -->
   <div id="carouselExampleCaptions" class="carousel slide">
     <div class="carousel-indicators">
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+            aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
     </div>
     <div class="carousel-inner">
-      <div class="carousel-item active">
-        <a href="http://example.com/first-slide"><img src="assets/venom.png" class="d-block w-100" alt="venom image"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h4>Venom: The Last Dance</h4>
-          <p>Eddie e Venom estão fugindo. Perseguidos pelos dois mundos, a dupla é forçada a tomar uma decisão devastadora que vai fechar as cortinas da última rodada de Venom e Eddie.</p>
+        <div class="carousel-item active">
+            <a href="venom.html"><img src="assets/venom.png" class="d-block w-100"
+                    alt="venom image"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h4>VENOM: THE LAST DANCE</h4>
+            </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <a href="http://example.com/second-slide"><img src="assets/wicked.png" class="d-block w-100" alt="wicked image"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Wicked</h5>
-          <p>Some representative placeholder content for the second slideO longa conta a história de Elphaba (Cynthia Erivo), uma jovem incompreendida por causa de sua pele verde incomum, que ainda não descobriu seu verdadeiro poder, e de Glinda (Ariana Grande), uma jovem popular e ambiciosa que só quer saber de privilégios e ainda não conhece a sua verdadeira alma. As duas se conhecem na Universidade de Shiz, na Terra de OZ, e se tornam grandes amigas, mas suas diferenças fazem com que a vida as separe, levando-as a cumprirem seus destinos como a Bruxa Boa e a Bruxa Má do Oeste.</p>
+        <div class="carousel-item">
+            <a href="wicked.html"><img src="assets/wicked.png" class="d-block w-100"
+                    alt="wicked image"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h4>WICKED</h4>
+            </div>
         </div>
-      </div>
-      <div class="carousel-item">
-        <a href="http://example.com/third-slide"><img src="assets/operacaonatal.png" class="d-block w-100" alt="operacao natal image"></a>
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Operação Natal</h5>
-          <p>Depois que o Papai Noel – codinome: Das Neves – é sequestrado, o Chefe de Segurança do Polo Norte deve se unir ao mais infame caçador de recompensas do mundo em uma missão global e cheia de ação para salvar o Natal.</p>
+        <div class="carousel-item">
+            <a href="operacaonatal.html"><img src="assets/operacaonatal.png" class="d-block w-100"
+                    alt="operacao natal image"></a>
+            <div class="carousel-caption d-none d-md-block">
+                <h4>OPERAÇÃO NATAL</h4>
+            </div>
         </div>
-      </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
     </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
     </button>
-  </div>
+</div>
 
 
   <div class="container">
-    <h2 class="text-center mb-4">Filmes em Cartaz</h2>
+    <h2 class="text-center mb-4">FILMES EM CARTAZ</h2>
     <div class="movie-container">
         <!-- Filme 1 -->
         <div class="movie-item">
-            <a href="booking.html">
+            <a href="operacaonatal.html">
                 <img src="assets/cartaz1.png" alt="Filme 1">
             </a>
         </div>
         <!-- Filme 2 -->
         <div class="movie-item">
-            <a href="booking.html">
+            <a href="aindaestouaqui.html">
                 <img src="assets/cartaz2.png" alt="Filme 2">
             </a>
         </div>
         <!-- Filme 3 -->
         <div class="movie-item">
-            <a href="booking.html">
+            <a href="wicked.html">
                 <img src="assets/cartaz3.png" alt="Filme 3">
             </a>
         </div>
         <!-- Filme 4 -->
         <div class="movie-item">
-            <a href="booking.html">
+            <a href="venom.html">
                 <img src="assets/swipper1.png" alt="Filme 4">
             </a>
         </div>
@@ -142,7 +168,7 @@
   
 
   <!-- Rodapé -->
-  <footer class="bg-light text-center py-4">
+  <footer class="bg-dark text-center py-4">
     <p>© 2024 Grupo Cine. Todos os direitos reservados.</p>
   </footer>
 

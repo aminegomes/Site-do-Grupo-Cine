@@ -16,6 +16,13 @@
     <!-- Swiper CSS -->
     <link href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" rel="stylesheet">
     <style>
+        body {
+            background-color: #1f1e1e;
+        }
+        .text-center {
+            color: rgb(231, 228, 228);
+            font: bold;
+        }
         .swiper {
             padding: 20px 0;
         }
@@ -29,7 +36,7 @@
             flex-direction: column;
             align-items: center;
             text-align: center;
-            background: #fff;
+            background: #e6e5e5;
             border-radius: 10px;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
             overflow: hidden;
@@ -40,21 +47,21 @@
             width: 100%;
             height: auto;
             object-fit: contain; /* Mantém a proporção da imagem */
-            border-radius: 5px;
+            border-radius: 12px;
         }
         .movie-info h5 {
             margin: 10px 0 5px;
-            font-size: 14px;
+            font-size: 20px;
         }
         .movie-info p {
             margin: 3px 0;
             color: #555;
-            font-size: 12px;
+            font-size: 14px;
         }
         .badge {
-            font-size: 10px;
+            font-size: 12px;
             padding: 3px 6px;
-            border-radius: 3px;
+            border-radius: 4px;
         }
         .badge.pre-venda {
             background-color: #ff9800;
@@ -63,6 +70,21 @@
         .badge.disponivel {
             background-color: #4caf50;
             color: #fff;
+        }
+        .badge.classificacao-10 {
+            background-color: #1E90FF; /* Azul para 10 anos */
+        }
+        .badge.classificacao-12 {
+            background-color: #FFD700; /* Amarelo para 12 anos */
+        }
+        .badge.classificacao-14 {
+            background-color: #FF8C00; /* Vermelho para 14 anos */
+        }
+        .badge.classificacao-16 {
+            background-color: #FF4500; /* Roxo para 16 anos */
+        }
+        .badge.classificacao-livre {
+            background-color: #3CB371; /* Verde claro para livre */
         }
         .link-slide {
             text-decoration: none;
@@ -87,86 +109,86 @@
     </ul>
 </nav>
 
-  <div class="container my-5">
-    <h2 class="text-center mb-4">Programação</h2>
+<div class="container my-5">
+    <h2 class="text-center mb-4">PROGRAMAÇÃO</h2>
     <!-- Swiper Slider -->
     <div class="swiper">
         <div class="swiper-wrapper">
             <!-- Slide 1 -->
             <div class="swiper-slide">
-                <a href="booking.html" class="link-slide">
+                <a href="venom.html" class="link-slide">
                     <img src="assets/swipper1.png" alt="Imagem Filme 1">
                     <div class="movie-info">
                         <h5>Venom: The Last Dance</h5>
                         <span class="badge disponivel">Disponível</span>
                         <p>Tipo: Ação</p>
                         <p>Duração: 110 min</p>
-                        <p>Classificação: 13 anos</p>
+                        <p>Classificação: <span class="badge classificacao-14">14</span></p> 
                     </div>
                 </a>
             </div>
             <!-- Slide 2 -->
             <div class="swiper-slide">
-                <a href="booking.html" class="link-slide">
+                <a href="wicked.html" class="link-slide">
                     <img src="assets/cartaz3.png" alt="Imagem Filme 2">
                     <div class="movie-info">
                         <h5>Wicked</h5>
                         <span class="badge disponivel">Disponível</span>
                         <p>Tipo: Musical</p>
                         <p>Duração: 160 min</p>
-                        <p>Classificação: 10 anos</p>
+                        <p>Classificação: <span class="badge classificacao-10">10</span></p>
                     </div>
                 </a>
             </div>
             <!-- Slide 3 -->
             <div class="swiper-slide">
-                <a href="booking.html" class="link-slide">
+                <a href="operacaonatal.html" class="link-slide">
                     <img src="assets/cartaz5.png" alt="Imagem Filme 3">
                     <div class="movie-info">
                         <h5>Operação Natal</h5>
                         <span class="badge disponivel">Disponível</span>
                         <p>Tipo: Aventura</p>
                         <p>Duração: 120 min</p>
-                        <p>Classificação: 12 anos</p>
+                        <p>Classificação: <span class="badge classificacao-12">12</span></p>
                     </div>
                 </a>
             </div>
             <!-- Slide 4 -->
             <div class="swiper-slide">
-              <a href="booking.html" class="link-slide">
+              <a href="moana.html" class="link-slide">
                   <img src="assets/cartaz7.png" alt="Imagem Filme 4">
                   <div class="movie-info">
                       <h5>Moana 2</h5>
                       <span class="badge pre-venda">Pré-venda</span>
                       <p>Tipo: Animação</p>
                       <p>Duração: 100 min</p>
-                      <p>Classificação: Livre</p>
+                      <p>Classificação: <span class="badge classificacao-livre">L</span></p>
                   </div>
               </a>
           </div>
            <!-- Slide 5 -->
            <div class="swiper-slide">
-            <a href="booking.html" class="link-slide">
+            <a href="aindaestouaqui.html" class="link-slide">
                 <img src="assets/cartaz8.png" alt="Imagem Filme 5">
                 <div class="movie-info">
                     <h5>Ainda Estou Aqui</h5>
                     <span class="badge disponivel">Disponível</span>
                     <p>Tipo: Drama</p>
                     <p>Duração: 135 min</p>
-                    <p>Classificação: 14 anos</p>
+                    <p>Classificação: <span class="badge classificacao-14">14</span></p>
                 </div>
             </a>
         </div>
          <!-- Slide 6 -->
          <div class="swiper-slide">
-          <a href="booking.html" class="link-slide">
+          <a href="herege.html" class="link-slide">
               <img src="assets/cartaz9.png" alt="Imagem Filme 6">
               <div class="movie-info">
                   <h5>Herege</h5>
                   <span class="badge pre-venda">Pré-venda</span>
                   <p>Tipo: Terror</p>
                   <p>Duração: 110 min</p>
-                  <p>Classificação: 16 anos</p>
+                  <p>Classificação: <span class="badge classificacao-16">16</span></p>
               </div>
           </a>
       </div>
@@ -231,7 +253,7 @@
     </script>
 
       <!-- Rodapé -->
-  <footer class="bg-light text-center py-4">
+  <footer class="bg-dark text-center py-4">
     <p>© 2024 Grupo Cine. Todos os direitos reservados.</p>
   </footer>
 

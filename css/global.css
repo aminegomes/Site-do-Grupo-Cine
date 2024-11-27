@@ -138,3 +138,6 @@ body {
   border-radius: 5px; /* Arredondamento nas bordas da imagem */
 }
 
+.carousel-caption p {
+  color: #ffffff; /* Cinza claro */
+}

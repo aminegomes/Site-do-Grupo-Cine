@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grupo Cine</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- CSS Local -->
+    <link rel="stylesheet" href="./css/global.css">
+    
+    <style>
+        body {
+            background-color: #1f1e1e;
+            color: #b3b0b0;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        .movie-details-card {
+            background-color: #3b3b3b;
+            padding: 20px;
+            border-radius: 12px;
+            width: 100%;
+        }
+
+        .movie-details {
+            display: flex;
+        }
+
+        .movie-image {
+            flex: 1;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+
+        .movie-image img {
+            width: 80%;
+            height: auto;
+            border-radius: 16px;
+        }
+
+        .rating {
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            color: #f4c10f;
+        }
+
+        .rating span {
+            font-size: 14px;
+            color: #c0c0c0;
+            margin-left: 10px;
+        }
+
+        .details {
+            flex: 2;
+            margin-top: 30px;
+        }
+
+        .movie-title {
+            font-size: 28px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            color: #ffffff;
+            margin-top: 15px;
+        }
+
+        .session-days {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .session-card {
+            flex: 1;
+            padding: 10px;
+            background-color: #1f1e1e;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .session-card p {
+            margin: 5px 0;
+        }
+
+        .session-card .day {
+            color: red;
+            font-weight: bold;
+        }
+
+        .session-card .info {
+            color: #dbdbdb;
+            font-size: 14px;
+        }
+
+        .session-card .time-btn {
+            display: block;
+            margin: 10px auto;
+            width: 100px;
+            padding: 10px;
+            background-color: #d6d8db;
+            border: none;
+            border-radius: 100px;
+            color: #000000;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .time-btn:hover {
+            background-color: #c6c8cb;
+        }
+
+        .value-card {
+            background-color: #d6d8db;
+            color: #212529;
+            width: 600px;
+            margin: 100px auto;
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        .card-dark {
+            background-color: #d6d8db;
+            color: #212529;
+            margin-top: 30px;
+            padding: 15px;
+            text-align: center;
+            border-radius: 12px;
+            max-width: 750px;
+            margin-left: auto;
+        }
+
+        .rating + div {
+            margin-top: 10px;
+        }
+
+        h1 {
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .age-rating {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    border-radius: 4px;
+    background-color: #FFD700; /* Cor padrão para 14 anos */
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 24px;
+}
+
+    </style>
+
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-left">
+        <a href="index.html">
+            <img src="assets/grupocine.png" alt="Logo" class="logo">
+        </a>
+    </div>
+    <ul class="navbar-menu">
+        <li><a href="index.html">Menu</a></li>
+        <li><a href="movies.html">Programação</a></li>
+        <li><a href="aboutus.html">Sobre Nós</a></li>
+    </ul>
+</nav>
+
+    <div class="container">
+        <h1>Detalhes do Filme</h1>
+
+        <div class="movie-details-card">
+            <div class="movie-details">
+                <!-- Imagem do Filme -->
+                <div class="movie-image">
+                    <img src="assets/cartaz5.png" alt="Poster do Filme">
+                    <!-- Nome do Filme -->
+                    <div class="movie-title">Operação Natal</div>
+                    <!-- Avaliação -->
+                    <div class="rating">
+                        ★★★☆☆ <span>(114 avaliações)</span>
+                    </div>
+                    <!-- Informações -->
+                    <div>
+                        <p>Categoria: Aventura</p>
+                        <p>Duração: 120 min</p>
+                        <p>Classificação:<span class="age-rating">12</span></p>
+                    </div>
+                </div>
+
+                <!-- Sessões -->
+                <div class="details">
+                    <div class="session-days">
+                        <!-- Sessão 1 -->
+                        <div class="session-card">
+                            <p class="day">Segunda-feira</p>
+                            <p class="info">Sala 5 - Dublado</p>
+                            <a href="booking.html" class="time-btn">14h30</a>
+                            <a href="booking.html" class="time-btn">17h00</a>
+                            <a href="booking.html" class="time-btn">19h40</a>
+                            <a href="booking.html" class="time-btn">21h00</a>
+                        </div>
+
+                        <!-- Sessão 2 -->
+                        <div class="session-card">
+                            <p class="day">Terça-feira</p>
+                            <p class="info">Sala 2 - Legendado</p>
+                            <a href="booking.html" class="time-btn">15h30</a>
+                            <a href="booking.html" class="time-btn">18h45</a>
+                            <a href="booking.html" class="time-btn">20h30</a>
+                            <a href="booking.html" class="time-btn">21h00</a>
+                        </div>
+
+                        <!-- Sessão 3 -->
+                        <div class="session-card">
+                            <p class="day">Quarta-feira</p>
+                            <p class="info">Sala 4 - Dublado</p>
+                            <a href="booking.html" class="time-btn">15h00</a>
+                            <a href="booking.html" class="time-btn">19h30</a>
+                            <a href="booking.html" class="time-btn">21h00</a>
+                            <a href="booking.html" class="time-btn">22h15</a>
+                        </div>
+                    </div>
+
+                    <!-- Informação de Valor -->
+                    <div class="value-card">
+                        <p>VALOR FIXO: R$15,00</p>
+                        <p>PAGAMENTO: Somente no estabelecimento - Din/Pix/Cartão</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-center py-4">
+    <p>© 2024 Grupo Cine. Todos os direitos reservados.</p>
+</footer>
+
+
+
+</body>
+</html>
